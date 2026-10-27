@@ -24,3 +24,27 @@
 
 ```bash
 pip install PyQt5 qrcode[pil] Pillow opencv-python numpy
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 🎯 QRInject - Photo QR Code Replacement & Injection Tool
+
+**QRInject** is a desktop-level tool built with `PyQt5`, specifically designed for scenarios such as security testing, red team exercises, and authorized marketing tests.
+It can seamlessly inject custom QR codes into target photos via **drag-and-drop, scaling, and arbitrary layout**, and supports one-click smart detection to precisely overlay and replace existing old QR codes.
+
+> **Core Use Cases**: QR code replacement (Social Engineering), poster link injection, custom business card and card generation.
+
+## ✨ Core Features
+
+- **🎯 One-Click Detection & Replacement (Core)**: Import the target poster/photo and click "Detect Original QR Code". The program will automatically parse the old link and **precisely overlay** your new QR code onto the original position (auto-scaled by 1.2x to perfectly cover the edges of the old code).
+- **🖼️ Free Drag & Drop Scaling**: Once the new QR code is generated, hold the **left mouse button** to drag it freely; drag the small corner squares to scale proportionally to perfectly match any size.
+- **🎨 In-Depth Visual Customization**: Supports custom foreground and background colors. The "Transparent Background" mode allows the QR code to blend seamlessly with the image scene.
+- **🛡️ Anti-Bleed Margin Mechanism**: Built-in "Outer White Margin" option (enabled by default) forces a safe white margin around the QR code, completely preventing old code remnants or background patterns from interfering with scanning.
+- **🏷️ Center Logo Injection**: Supports embedding custom icons/avatars in the center of the QR code. The program automatically handles safe spacing without affecting scanning.
+- **💾 Auto-Backup & Recovery**: Features exit interception and auto-backup mechanisms. If the software is closed by mistake, the previous layout state can be restored with one click on the next launch, preventing loss of work.
+
+## 🛠️ Environment Setup
+
+Please ensure Python 3.6+ is installed. Execute the following command in the command line to install dependencies:
+
+```bash
+pip install PyQt5 qrcode[pil] Pillow opencv-python numpy
